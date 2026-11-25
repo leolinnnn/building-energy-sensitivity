@@ -1,0 +1,64 @@
+{
+  "engine_version": "EnergyPlus, Version 26.1.0-6f2e40d102",
+  "weather_sha256": "f6b125ed8424f062ededec7f5c685b03c903b85f0a64521830b5519520488175",
+  "runs": [
+    {
+      "result_id": "R_M03_horizontal",
+      "exit_code": 0,
+      "elapsed_seconds": 6.473232500000449,
+      "conditioned_m2": 11588.45,
+      "idf_sha256": "026d47260d2a7a2aabeccbfee3fceb4bddc464fa08077a81ee6d4d3e1e8f3891",
+      "sql_sha256": "aad3e89d3ffb3a5eda6e64976863ad6ec6eef5053dba8ef46473d3ac59e58cc9",
+      "annual_heating_J": 1957304305425.4932,
+      "annual_cooling_J": 1163620344914.689,
+      "heating_kWh_per_m2_a": 46.91702862729444,
+      "cooling_kWh_per_m2_a": 27.892243879674464,
+      "ideal_total_kWh_per_m2_a": 74.80927250696891,
+      "max_reference_difference_kWh_per_m2_a": 0.0
+    },
+    {
+      "result_id": "R_M03_hybrid",
+      "exit_code": 0,
+      "elapsed_seconds": 4.757327799998166,
+      "conditioned_m2": 9636.54,
+      "idf_sha256": "7461054264df02fc7847ae997c3d899dcdb25e85aacf93d4d8683217998878aa",
+      "sql_sha256": "91f34ea70e9ef386e0732b261f70a47f49de19c973cadf744511c5495a5f8e69",
+      "annual_heating_J": 1444385699882.0803,
+      "annual_cooling_J": 969318682742.1954,
+      "heating_kWh_per_m2_a": 41.63509412789699,
+      "cooling_kWh_per_m2_a": 27.941064910290397,
+      "ideal_total_kWh_per_m2_a": 69.57615903818738,
+      "max_reference_difference_kWh_per_m2_a": 0.0
+    },
+    {
+      "result_id": "R_M03_north_south",
+      "exit_code": 0,
+      "elapsed_seconds": 4.977691200001573,
+      "conditioned_m2": 10555.058735999999,
+      "idf_sha256": "4cd95e6cd97c58a2e03dd602a73e05e8b3b0985420eefef6ca11fbb2dcec20fc",
+      "sql_sha256": "e2d1fb8cb660a0f84d1ae0472d369ed74b358799ad416f80b0aa3bfc28f79c81",
+      "annual_heating_J": 1423921613591.2988,
+      "annual_cooling_J": 979630614280.3416,
+      "heating_kWh_per_m2_a": 37.47338517445637,
+      "cooling_kWh_per_m2_a": 25.780966443110152,
+      "ideal_total_kWh_per_m2_a": 63.25435161756652,
+      "max_reference_difference_kWh_per_m2_a": 0.0
+    },
+    {
+      "result_id": "R_M03_vertical",
+      "exit_code": 0,
+      "elapsed_seconds": 5.8703026000002865,
+      "conditioned_m2": 9623.27,
+      "idf_sha256": "80c521221234ba69ea428770e499ab30fe540398c4389185a382ff9ab2d44f9a",
+      "sql_sha256": "33fe4505f15d6ef72c3da0c9e3b9737047b4e04f8b113a3d1b5aec55c89a7c06",
+      "annual_heating_J": 1581280146703.3088,
+      "annual_cooling_J": 948390128855.0028,
+      "heating_kWh_per_m2_a": 45.643994733117076,
+      "cooling_kWh_per_m2_a": 27.375486966459736,
+      "ideal_total_kWh_per_m2_a": 73.01948169957682,
+      "max_reference_difference_kWh_per_m2_a": 0.0
+    }
+  ],
+  "failures": [],
+  "note": "Rerun agreement does not bound solver error."
+}

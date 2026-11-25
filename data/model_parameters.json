@@ -1,0 +1,175 @@
+{
+  "schema_version": "M02-1.0",
+  "created_on": "2026-09-14",
+  "is_actual_energy_station_model": false,
+  "source_geometry_sha256": "15be7727ba355a76963990f3ec05392782787fcfa972fe2386e814aa3a79ba0f",
+  "weather_sha256": "f6b125ed8424f062ededec7f5c685b03c903b85f0a64521830b5519520488175",
+  "engine_version": "26.1.0-6f2e40d102",
+  "geometry": {
+    "cad_unit_to_m": 0.001,
+    "north_axis_deg": 0,
+    "north_direction_in_source": "+Y",
+    "story_height_m": 6.0,
+    "story_bottom_elevation_m": {
+      "B1": -6.0,
+      "F1": 0.0,
+      "F2": 6.0,
+      "F3": 12.0
+    },
+    "zone_rule": "one zone per connected CONDITIONED_VIRTUAL or ENCLOSED_UNCONDITIONED component per floor",
+    "outdoor_categories": [
+      "OUTDOOR_ROOF_CORRIDOR_OR_VOID"
+    ],
+    "hybrid_f3_baseline": "HF3-W1-E0"
+  },
+  "simulation": {
+    "run_period": "Jan 1-Dec 31, weather-file calendar",
+    "timestep_per_hour": 6,
+    "solar_distribution": "FullExterior",
+    "daylight_saving": false,
+    "holidays": false
+  },
+  "materials_analyst_assumptions": {
+    "concrete": {
+      "thickness_m": 0.2,
+      "conductivity_W_mK": 1.95,
+      "density_kg_m3": 2400,
+      "specific_heat_J_kgK": 900
+    },
+    "xps": {
+      "conductivity_W_mK": 0.029,
+      "density_kg_m3": 28,
+      "specific_heat_J_kgK": 1450
+    },
+    "exterior_solar_absorptance": 0.7,
+    "exterior_thermal_absorptance": 0.9,
+    "exterior_wall_layers_outside_to_inside": [
+      "xps_0.08_m",
+      "concrete_0.20_m"
+    ],
+    "roof_layers_outside_to_inside": [
+      "xps_0.10_m",
+      "concrete_0.20_m"
+    ],
+    "exposed_floor_layers_outside_to_inside": [
+      "xps_0.08_m",
+      "concrete_0.20_m"
+    ],
+    "basement_wall_layers_soil_to_inside": [
+      "xps_0.08_m",
+      "concrete_0.20_m"
+    ],
+    "basement_slab_layers_soil_to_inside": [
+      "xps_0.05_m",
+      "concrete_0.30_m"
+    ],
+    "interzone_wall_layers": [
+      "concrete_0.20_m"
+    ],
+    "interzone_slab_layers": [
+      "concrete_0.20_m"
+    ]
+  },
+  "fenestration_analyst_assumptions": {
+    "object": "WindowMaterial:SimpleGlazingSystem",
+    "wwr_target": 0.2,
+    "u_factor_W_m2K": 2.2,
+    "shgc": 0.45,
+    "visible_transmittance": 0.6,
+    "eligible_surface": "conditioned-zone exterior vertical wall above grade only; outdoor-facing void/courtyard walls included; no basement, interzone or unconditioned-zone windows",
+    "no_window_if_surface_cannot_fit": "flag and fail 0.02 absolute WWR tolerance; do not silently relocate area"
+  },
+  "air_and_operation_analyst_assumptions": {
+    "conditioned_zone_infiltration_ach": 0.2,
+    "unconditioned_zone_infiltration_ach": 0.2,
+    "infiltration_coefficients_A_B_C_D": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "conditioned_outdoor_air_L_s_m2": 0.3,
+    "unconditioned_outdoor_air_L_s_m2": 0.0,
+    "occupancy_people_m2": 0.0,
+    "lighting_W_m2": 3.0,
+    "electric_equipment_W_m2": 5.0,
+    "unconditioned_internal_gains_W_m2": 0.0,
+    "all_schedules": "1.0 at all hours, every day",
+    "heating_setpoint_C": 20.0,
+    "cooling_setpoint_C": 26.0
+  },
+  "ideal_hvac_analyst_assumptions": {
+    "object": "ZoneHVAC:IdealLoadsAirSystem",
+    "heating_limit": "NoLimit",
+    "cooling_limit": "NoLimit",
+    "economizer": "NoEconomizer",
+    "heat_recovery": "None",
+    "humidification": "None",
+    "dehumidification": "None",
+    "outdoor_air_via": "DesignSpecification:OutdoorAir, Flow/Area",
+    "primary_heating_output_J": "Zone Ideal Loads Supply Air Total Heating Energy",
+    "primary_cooling_output_J": "Zone Ideal Loads Supply Air Total Cooling Energy"
+  },
+  "foundation_analyst_assumptions": {
+    "object": "Foundation:Kiva",
+    "B1_floor_and_exterior_walls": "Foundation; all B1 exterior walls treated as fully buried from -6 m to 0 m",
+    "soil_conductivity_W_mK": 1.73,
+    "soil_density_kg_m3": 1842,
+    "soil_specific_heat_J_kgK": 419,
+    "no_fallback_to_epw_undisturbed_ground_temperature": true,
+    "missing_kiva_geometry_is_fatal": true
+  },
+  "paired_sensitivity_levels_analyst_design": {
+    "wwr_target": [
+      0.0,
+      0.4
+    ],
+    "wall_xps_thickness_m": [
+      0.04,
+      0.12
+    ],
+    "roof_xps_thickness_m": [
+      0.05,
+      0.15
+    ],
+    "infiltration_ach": [
+      0.1,
+      0.5
+    ],
+    "outdoor_air_L_s_m2": [
+      0.0,
+      0.6
+    ],
+    "total_internal_gains_W_m2": [
+      0.0,
+      16.0
+    ],
+    "setpoint_pair_C": [
+      [
+        18.0,
+        28.0
+      ],
+      [
+        22.0,
+        24.0
+      ]
+    ],
+    "soil_conductivity_W_mK": [
+      0.8,
+      3.0
+    ],
+    "hybrid_F3_branches": [
+      "W0-E0",
+      "W0-EU",
+      "W0-EC",
+      "W1-E0",
+      "W1-EU",
+      "W1-EC"
+    ]
+  },
+  "output_conversion": {
+    "J_to_kWh": 2.777777777777778e-07,
+    "area_denominator": "conditioned_virtual_m2 from floor_geometry_qa.csv, independently cross-checked against IDF/EIO"
+  },
+  "scope": "Conditional geometry with common virtual-use assumptions; not an as-built station model."
+}

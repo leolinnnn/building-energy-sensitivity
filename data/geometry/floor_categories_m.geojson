@@ -1,0 +1,1655 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              62.40000000000023,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              -57.6
+            ],
+            [
+              0.0,
+              -57.6
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "B1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": -6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2178",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              56.89999999999558,
+              0.0
+            ],
+            [
+              56.89999999999558,
+              -49.2
+            ],
+            [
+              27.900000000000002,
+              -49.2
+            ],
+            [
+              27.900000000000002,
+              -57.6
+            ],
+            [
+              0.0,
+              -57.6
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              56.89999999999558,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 0.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2201",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              56.89999999999558,
+              -49.2
+            ],
+            [
+              56.89999999999558,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              -57.6
+            ],
+            [
+              27.900000000000002,
+              -57.6
+            ],
+            [
+              27.900000000000002,
+              -49.2
+            ],
+            [
+              56.89999999999558,
+              -49.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F1",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 0.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2201",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.499999999997206,
+              0.0
+            ],
+            [
+              13.499999999997206,
+              -8.8
+            ],
+            [
+              5.599999999997439,
+              -8.8
+            ],
+            [
+              5.599999999997439,
+              -32.0
+            ],
+            [
+              23.399999999999302,
+              -32.0
+            ],
+            [
+              23.399999999999302,
+              0.0
+            ],
+            [
+              32.3999999999993,
+              0.0
+            ],
+            [
+              32.3999999999993,
+              -32.0
+            ],
+            [
+              27.899999999999302,
+              -32.0
+            ],
+            [
+              27.899999999999302,
+              -40.6499999999993
+            ],
+            [
+              56.899999999994876,
+              -40.6499999999993
+            ],
+            [
+              56.899999999994876,
+              -32.0
+            ],
+            [
+              56.899999999993014,
+              -32.0
+            ],
+            [
+              56.899999999993014,
+              -7.699999999993946
+            ],
+            [
+              49.399999999990456,
+              -7.699999999993946
+            ],
+            [
+              49.399999999990456,
+              0.0
+            ],
+            [
+              62.39999999999954,
+              0.0
+            ],
+            [
+              62.39999999999954,
+              -57.6
+            ],
+            [
+              -6.984919309616089e-13,
+              -57.6
+            ],
+            [
+              -6.984919309616089e-13,
+              0.0
+            ],
+            [
+              13.499999999997206,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F2",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2228",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                56.899999999994876,
+                -40.6499999999993
+              ],
+              [
+                27.899999999999302,
+                -40.6499999999993
+              ],
+              [
+                27.899999999999302,
+                -32.0
+              ],
+              [
+                32.3999999999993,
+                -32.0
+              ],
+              [
+                32.3999999999993,
+                0.0
+              ],
+              [
+                49.399999999990456,
+                0.0
+              ],
+              [
+                49.399999999990456,
+                -7.699999999993946
+              ],
+              [
+                56.899999999993014,
+                -7.699999999993946
+              ],
+              [
+                56.899999999993014,
+                -32.0
+              ],
+              [
+                56.899999999994876,
+                -32.0
+              ],
+              [
+                56.899999999994876,
+                -40.6499999999993
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                5.599999999997439,
+                -8.8
+              ],
+              [
+                13.499999999997206,
+                -8.8
+              ],
+              [
+                13.499999999997206,
+                0.0
+              ],
+              [
+                23.399999999999302,
+                0.0
+              ],
+              [
+                23.399999999999302,
+                -32.0
+              ],
+              [
+                5.599999999997439,
+                -32.0
+              ],
+              [
+                5.599999999997439,
+                -8.8
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F2",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2228",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.499999999998021,
+              0.0
+            ],
+            [
+              13.499999999998021,
+              -8.8
+            ],
+            [
+              5.5999999999982535,
+              -8.8
+            ],
+            [
+              5.5999999999982535,
+              -32.0
+            ],
+            [
+              23.400000000000002,
+              -32.0
+            ],
+            [
+              23.400000000000002,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              0.0
+            ],
+            [
+              62.40000000000023,
+              -57.6
+            ],
+            [
+              0.0,
+              -57.6
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              13.499999999998021,
+              0.0
+            ]
+          ],
+          [
+            [
+              56.89999999999558,
+              -32.0
+            ],
+            [
+              27.900000000000002,
+              -32.0
+            ],
+            [
+              27.900000000000002,
+              -40.649999999999245
+            ],
+            [
+              56.89999999999558,
+              -40.649999999999245
+            ],
+            [
+              56.89999999999558,
+              -32.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F3",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2259",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                56.89999999999558,
+                -40.649999999999245
+              ],
+              [
+                27.900000000000002,
+                -40.649999999999245
+              ],
+              [
+                27.900000000000002,
+                -32.0
+              ],
+              [
+                56.89999999999558,
+                -32.0
+              ],
+              [
+                56.89999999999558,
+                -40.649999999999245
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                5.5999999999982535,
+                -32.0
+              ],
+              [
+                5.5999999999982535,
+                -8.8
+              ],
+              [
+                13.499999999998021,
+                -8.8
+              ],
+              [
+                13.499999999998021,
+                0.0
+              ],
+              [
+                23.400000000000002,
+                0.0
+              ],
+              [
+                23.400000000000002,
+                -32.0
+              ],
+              [
+                5.5999999999982535,
+                -32.0
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "horizontal",
+        "level": "F3",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2259",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              48.40000000000023,
+              8.8
+            ],
+            [
+              48.40000000000023,
+              -48.800000000000004
+            ],
+            [
+              -14.0,
+              -48.800000000000004
+            ],
+            [
+              -14.0,
+              8.8
+            ],
+            [
+              48.40000000000023,
+              8.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "B1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": -6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "2120",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.399999999997206,
+              8.800000000001747
+            ],
+            [
+              41.99999999999371,
+              8.800000000001747
+            ],
+            [
+              41.99999999999278,
+              -40.39999999999901
+            ],
+            [
+              39.09999999998999,
+              -40.39999999999901
+            ],
+            [
+              39.09999999998999,
+              -43.300000000000175
+            ],
+            [
+              32.90000000000466,
+              -43.300000000000175
+            ],
+            [
+              32.90000000000466,
+              -40.39999999999901
+            ],
+            [
+              -6.399999999997206,
+              -40.39999999999901
+            ],
+            [
+              -6.399999999997206,
+              8.800000000001049
+            ],
+            [
+              -6.399999999997206,
+              8.800000000001747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "F1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 0.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4898",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.70000000000978,
+                8.800000000001049
+              ],
+              [
+                13.70000000000978,
+                -36.099999999999305
+              ],
+              [
+                48.50000000000443,
+                -36.099999999999305
+              ],
+              [
+                48.50000000000443,
+                -45.3999999999993
+              ],
+              [
+                -10.899999999994995,
+                -45.3999999999993
+              ],
+              [
+                -10.899999999995577,
+                -31.5999999999993
+              ],
+              [
+                -6.399999999997206,
+                -31.5999999999993
+              ],
+              [
+                -6.399999999997206,
+                8.800000000001049
+              ],
+              [
+                13.70000000000978,
+                8.800000000001049
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                37.49999999999907,
+                1.1000000000040746
+              ],
+              [
+                37.49999999999907,
+                7.300000000004075
+              ],
+              [
+                42.0,
+                7.300000000004075
+              ],
+              [
+                42.0,
+                1.1000000000040746
+              ],
+              [
+                37.49999999999907,
+                1.1000000000040746
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "F2",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4899",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              48.50000000000443,
+              -36.099999999999305
+            ],
+            [
+              13.70000000000978,
+              -36.099999999999305
+            ],
+            [
+              13.70000000000978,
+              8.800000000001049
+            ],
+            [
+              48.50000000000443,
+              8.800000000001049
+            ],
+            [
+              48.50000000000443,
+              -36.099999999999305
+            ]
+          ],
+          [
+            [
+              42.0,
+              1.1000000000040746
+            ],
+            [
+              42.0,
+              7.300000000004075
+            ],
+            [
+              37.49999999999907,
+              7.300000000004075
+            ],
+            [
+              37.49999999999907,
+              1.1000000000040746
+            ],
+            [
+              42.0,
+              1.1000000000040746
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "F2",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4899",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.700000000005355,
+              8.799999999972178
+            ],
+            [
+              13.700000000005355,
+              -36.10000000002788
+            ],
+            [
+              28.1,
+              -36.10000000002788
+            ],
+            [
+              28.1,
+              8.799999999972178
+            ],
+            [
+              43.9,
+              8.799999999972178
+            ],
+            [
+              43.9,
+              -36.10000000002788
+            ],
+            [
+              48.0,
+              -36.10000000002788
+            ],
+            [
+              48.0,
+              -44.90000000002777
+            ],
+            [
+              -10.5,
+              -44.90000000002777
+            ],
+            [
+              -10.5,
+              -36.10000000002788
+            ],
+            [
+              -6.4,
+              -36.10000000002788
+            ],
+            [
+              -6.4,
+              8.799999999972178
+            ],
+            [
+              13.700000000005355,
+              8.799999999972178
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "F3",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4900",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.1,
+              -36.10000000002788
+            ],
+            [
+              13.700000000005355,
+              -36.10000000002788
+            ],
+            [
+              13.700000000005355,
+              8.799999999972178
+            ],
+            [
+              28.1,
+              8.799999999972178
+            ],
+            [
+              28.1,
+              -36.10000000002788
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "vertical",
+        "level": "F3",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4900",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              54.80000000000041,
+              0.0
+            ],
+            [
+              54.80000000000041,
+              -57.60000000000082
+            ],
+            [
+              0.0,
+              -57.60000000000082
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              54.80000000000041,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "B1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": -6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4895",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              54.40000000000187,
+              0.0
+            ],
+            [
+              54.40000000000187,
+              -52.09999999999482
+            ],
+            [
+              0.0,
+              -52.09999999999482
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              54.40000000000187,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 0.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "1010",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.100000000000176,
+              0.0
+            ],
+            [
+              20.100000000000176,
+              -42.39999999999697
+            ],
+            [
+              37.80000014791027,
+              -42.399999999996915
+            ],
+            [
+              37.800000147788026,
+              -21.399999999996624
+            ],
+            [
+              31.700000000000117,
+              -21.399999999997032
+            ],
+            [
+              31.699999999999594,
+              0.0
+            ],
+            [
+              59.30000000000052,
+              0.0
+            ],
+            [
+              59.30000000000052,
+              -54.09999999999696
+            ],
+            [
+              0.0,
+              -54.09999999999696
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              20.100000000000176,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F2",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "1028",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.700000000000117,
+              -21.399999999997032
+            ],
+            [
+              37.800000147788026,
+              -21.399999999996624
+            ],
+            [
+              37.80000014791027,
+              -42.399999999996915
+            ],
+            [
+              20.100000000000176,
+              -42.39999999999697
+            ],
+            [
+              20.100000000000176,
+              0.0
+            ],
+            [
+              31.699999999999594,
+              0.0
+            ],
+            [
+              31.700000000000117,
+              -21.399999999997032
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F2",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "1028",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.300000000005355,
+              0.0
+            ],
+            [
+              20.300000000005355,
+              -52.09999999999857
+            ],
+            [
+              0.0,
+              -52.09999999999857
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              20.300000000005355,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F3",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_W1_E0_WEST_ENCLOSED_EAST_FARM_OPEN_CORES_UNCONDITIONED",
+        "source_handles": "944;945;973;974;4897",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                57.30000000000035,
+                -52.10000043803262
+              ],
+              [
+                48.3999999999989,
+                -52.10000043803262
+              ],
+              [
+                48.3999999999989,
+                -46.699999999998155
+              ],
+              [
+                57.30000000000035,
+                -46.699999999998155
+              ],
+              [
+                57.30000000000035,
+                -52.10000043803262
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                57.30000000000035,
+                -2.9999999999963474
+              ],
+              [
+                48.40000000000012,
+                -2.9999999999963474
+              ],
+              [
+                48.40000000000012,
+                1.382431946694851e-12
+              ],
+              [
+                57.30000000000035,
+                1.382431946694851e-12
+              ],
+              [
+                57.30000000000035,
+                -2.9999999999963474
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F3",
+        "category": "ENCLOSED_UNCONDITIONED",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_W1_E0_WEST_ENCLOSED_EAST_FARM_OPEN_CORES_UNCONDITIONED",
+        "source_handles": "944;945;973;974;4897",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              48.40000000000012,
+              1.382431946694851e-12
+            ],
+            [
+              48.40000000000012,
+              -2.9999999999963474
+            ],
+            [
+              57.30000000000035,
+              -2.9999999999963474
+            ],
+            [
+              57.30000000000035,
+              -46.699999999998155
+            ],
+            [
+              48.3999999999989,
+              -46.699999999998155
+            ],
+            [
+              48.3999999999989,
+              -52.10000043803262
+            ],
+            [
+              0.0,
+              -52.10000043803262
+            ],
+            [
+              0.0,
+              -52.09999999999857
+            ],
+            [
+              20.300000000005355,
+              -52.09999999999857
+            ],
+            [
+              20.300000000005355,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.382431946694851e-12
+            ],
+            [
+              48.40000000000012,
+              1.382431946694851e-12
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "hybrid",
+        "level": "F3",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_W1_E0_WEST_ENCLOSED_EAST_FARM_OPEN_CORES_UNCONDITIONED",
+        "source_handles": "944;945;973;974;4897",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "B1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": -6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "3235",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "F1",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 0.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4871",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -57.955308929586316
+            ],
+            [
+              65.77066135971575,
+              -57.955308929586316
+            ],
+            [
+              65.77066135971575,
+              -40.266308929586316
+            ],
+            [
+              54.53466135971574,
+              -40.266308929586316
+            ],
+            [
+              54.53466135971574,
+              -46.29330892958632
+            ],
+            [
+              48.52466135971574,
+              -46.29330892958632
+            ],
+            [
+              48.52466135971574,
+              -40.266308929586316
+            ],
+            [
+              45.23366135971574,
+              -40.266308929586316
+            ],
+            [
+              45.23366135971574,
+              -44.263308929586316
+            ],
+            [
+              40.68066135971574,
+              -44.263308929586316
+            ],
+            [
+              40.68066135971574,
+              -40.266308929586316
+            ],
+            [
+              24.832661359715743,
+              -40.266308929586316
+            ],
+            [
+              24.832661359715743,
+              -49.47930892958632
+            ],
+            [
+              3.517661359715741,
+              -49.47930892958632
+            ],
+            [
+              0.0,
+              -49.47930892958632
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "F2",
+        "category": "CONDITIONED_VIRTUAL",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4877",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.68066135971574,
+              -40.266308929586316
+            ],
+            [
+              40.68066135971574,
+              -44.263308929586316
+            ],
+            [
+              45.23366135971574,
+              -44.263308929586316
+            ],
+            [
+              45.23366135971574,
+              -40.266308929586316
+            ],
+            [
+              48.52466135971574,
+              -40.266308929586316
+            ],
+            [
+              48.52466135971574,
+              -46.29330892958632
+            ],
+            [
+              54.53466135971574,
+              -46.29330892958632
+            ],
+            [
+              54.53466135971574,
+              -40.266308929586316
+            ],
+            [
+              65.77066135971575,
+              -40.266308929586316
+            ],
+            [
+              65.77066135971575,
+              -57.955308929586316
+            ],
+            [
+              0.0,
+              -57.955308929586316
+            ],
+            [
+              0.0,
+              -49.47930892958632
+            ],
+            [
+              3.517661359715741,
+              -49.47930892958632
+            ],
+            [
+              24.832661359715743,
+              -49.47930892958632
+            ],
+            [
+              24.832661359715743,
+              -40.266308929586316
+            ],
+            [
+              40.68066135971574,
+              -40.266308929586316
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "F2",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 6.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ALL_REMAINING_ENCLOSED_AREA_COMMON_IDEAL_LOADS",
+        "source_handles": "4877",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                0.0,
+                -40.50623029625416
+              ],
+              [
+                0.0,
+                -37.11723616784811
+              ],
+              [
+                18.695454465895892,
+                -37.11723616784811
+              ],
+              [
+                18.695454465895892,
+                -40.50623029625416
+              ],
+              [
+                3.3201043258309366,
+                -40.50623029625416
+              ],
+              [
+                3.3201043258309366,
+                -49.657490800440314
+              ],
+              [
+                0.0,
+                -49.657490800440314
+              ],
+              [
+                0.0,
+                -40.50623029625416
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                0.0,
+                -6.388245378136635
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                8.106602521002293,
+                0.0
+              ],
+              [
+                8.106602521002293,
+                -6.388245378136635
+              ],
+              [
+                8.106602521002293,
+                -12.331739495694638
+              ],
+              [
+                0.0,
+                -12.331739495694638
+              ],
+              [
+                0.0,
+                -6.388245378136635
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "F3",
+        "category": "ENCLOSED_UNCONDITIONED",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ROOF_ONLY_WITH_FOUR_UNCONDITIONED_CORE_ROOMS",
+        "source_handles": "3828;3834;3840;3846;4883",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              65.77101644292473,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -57.95538488030434
+            ],
+            [
+              0.0,
+              -49.657490800440314
+            ],
+            [
+              3.3201043258309366,
+              -49.657490800440314
+            ],
+            [
+              3.3201043258309366,
+              -40.50623029625416
+            ],
+            [
+              18.695454465895892,
+              -40.50623029625416
+            ],
+            [
+              18.695454465895892,
+              -37.11723616784811
+            ],
+            [
+              0.0,
+              -37.11723616784811
+            ],
+            [
+              0.0,
+              -12.331739495694638
+            ],
+            [
+              8.106602521002293,
+              -12.331739495694638
+            ],
+            [
+              8.106602521002293,
+              -6.388245378136635
+            ],
+            [
+              8.106602521002293,
+              0.0
+            ],
+            [
+              65.77101644292473,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "prototype_id": "north_south",
+        "level": "F3",
+        "category": "OUTDOOR_ROOF_CORRIDOR_OR_VOID",
+        "floor_z_m": 12.0,
+        "floor_to_floor_m": 6,
+        "rule": "HYPOTHESIS_ROOF_ONLY_WITH_FOUR_UNCONDITIONED_CORE_ROOMS",
+        "source_handles": "3828;3834;3840;3846;4883",
+        "status": "RESEARCHER_CONVENTIONAL_SCENARIO_NOT_SOURCE_FACT"
+      }
+    }
+  ]
+}

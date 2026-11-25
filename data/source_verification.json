@@ -1,0 +1,21 @@
+{
+  "verified_on": "2026-11-25",
+  "models_verified": 170,
+  "source_sql_files_verified": 170,
+  "group_counts": {
+    "baseline": 4,
+    "geometry": 6,
+    "ofat": 64,
+    "factorial": 96
+  },
+  "monthly_zone_rows": 8148,
+  "max_intensity_difference_kWh_per_m2_a": 0.0,
+  "all_source_idf_and_sql_hashes_match": true,
+  "all_runs_completed": true,
+  "severe_errors_total": 0,
+  "warning_counts": {
+    "3": 166,
+    "2": 4
+  },
+  "meaning": "Data extraction and reproducibility check; not model calibration or a solver-error bound."
+}
