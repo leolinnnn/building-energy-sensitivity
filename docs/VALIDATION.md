@@ -13,15 +13,28 @@ Repository preparation checked the following on **25 November 2026**:
 | Fresh engine execution | Four baseline IDFs rerun with EnergyPlus 26.1.0; all annual heating, cooling and combined metrics matched the archive |
 | Numerical tests | Unit conversion, near-tie handling, analytical factorial contrasts and complete dataset regression checks passed |
 
-Machine-readable records: [source audit](../data/source_verification.json) and
-[baseline rerun](../data/baseline_rerun_verification.json).
+Machine-readable records: [source audit](../reference/validation/source_verification.json) and
+[baseline rerun](../reference/validation/baseline_rerun_verification.json).
 The 166 nonbaseline records were re-extracted and checked against their original
 databases; they were not rerun during this repository preparation.
+
+## Organization-review checks
+
+The 25 November 2026 file reorganization was followed by a complete numerical
+recalculation, the four existing analytical/regression tests, four baseline-model
+rebuilds, figure generation and four fresh baseline solver runs. All checks
+passed; the maximum annual metric difference from the archive was **0.0 kWh/m²/year**.
+The 170 original IDFs and all original numerical/geometry inputs retain their bytes.
+Only input/reference paths changed in the Python implementation.
+
+The [CI configuration](../.github/workflows/checks.yml) covers the standard-library
+tests and numerical reproduction. Model construction, plotting and EnergyPlus
+runs require the additional environment described in [REPRODUCING.md](REPRODUCING.md).
 
 ## Known warning
 
 The archived runs contain psychrometric temperature warnings in `PsyTwbFnTdbWPb` /
-`PsyPsatFnTemp`. The baseline error logs are preserved in [data/logs](../data/logs).
+`PsyPsatFnTemp`. The baseline error logs are preserved in [reference/logs](../reference/logs).
 The source records contain 166 runs with three warnings and four with two warnings.
 Zero severe errors does not mean warning-free or fully validated.
 

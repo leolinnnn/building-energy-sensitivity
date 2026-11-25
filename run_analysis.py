@@ -21,7 +21,7 @@ def reproduce(out: Path, check_models: bool = False) -> tuple[list[dict], dict]:
         monthly[row['result_id']].append(row)
     if set(monthly) != {r['result_id'] for r in cases}:
         raise ValueError('Case/monthly identifiers differ')
-    reference = {r['result_id']:r for r in read_csv(ROOT/'data/annual_results.csv')}
+    reference = {r['result_id']:r for r in read_csv(ROOT/'reference/annual_results.csv')}
     if set(reference) != set(monthly):
         raise ValueError('Case/annual identifiers differ')
     results, max_diff = [], 0.0

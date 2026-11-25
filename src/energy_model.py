@@ -17,7 +17,7 @@ from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[1]
 GEO = ROOT / "data/geometry/floor_categories_m.geojson"
-AREA_QA = ROOT / "data/geometry/floor_geometry_qa.csv"
+AREA_QA = ROOT / "reference/geometry/floor_geometry_qa.csv"
 PROTOTYPES = ("horizontal", "vertical", "hybrid", "north_south")
 LEVELS = ("B1", "F1", "F2", "F3")
 EPS_AREA = 1e-5
@@ -471,4 +471,3 @@ class Model:
             "ceiling_roof_area_check_m2": self.top_area,
             "wall_perimeter_check_m": self.wall_length,
         }
-

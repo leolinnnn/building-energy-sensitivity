@@ -47,7 +47,7 @@ def main():
         parser.error('Executable, adjacent Energy+.idd, and weather file must exist')
     if args.jobs < 1 or out.exists():
         parser.error('Use a positive --jobs value and a new output directory')
-    source = json.loads((ROOT/'data/source_manifest.json').read_text(encoding='utf-8'))
+    source = json.loads((ROOT/'source_manifest.json').read_text(encoding='utf-8'))
     version = subprocess.run([str(engine),'--version'],capture_output=True,text=True,check=True).stdout.strip()
     if source['engine'] not in version:
         parser.error(f"Expected EnergyPlus {source['engine']}; found {version}")
@@ -57,7 +57,7 @@ def main():
     for case in cases:
         if sha256(ROOT/case['model_path']) != case['idf_sha256']:
             parser.error(f"Model checksum failed: {case['model_path']}")
-    reference = {r['result_id']:r for r in read_csv(ROOT/'data/annual_results.csv')}
+    reference = {r['result_id']:r for r in read_csv(ROOT/'reference/annual_results.csv')}
     out.mkdir(parents=True)
     ledger = {'engine_version':version,'weather_sha256':sha256(weather),
               'runs':[], 'failures':[], 'note':'Rerun agreement does not bound solver error.'}

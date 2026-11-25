@@ -20,7 +20,7 @@ def main():
     args = parser.parse_args()
     if args.out.exists():
         parser.error('Choose a new output directory; existing models are never overwritten')
-    params_path = ROOT/'data/model_parameters.json'
+    params_path = ROOT/'configs/model_parameters.json'
     params = json.loads(params_path.read_text(encoding='utf-8'))
     hashes = {'CONDITIONAL_GEOMETRY':sha256(GEO),'COMMON_PARAMETERS':sha256(params_path),
               'COMMON_WEATHER':params['weather_sha256']}

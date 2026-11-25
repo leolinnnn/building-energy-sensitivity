@@ -1,13 +1,14 @@
 # Building energy sensitivity analysis
 
 Python workflows for generating EnergyPlus models and examining how geometry and
-shared operating assumptions affect the comparison of annual heating and cooling
-demand. The case study uses **four drawing-derived energy-station scenarios** in
-Taiyuan, China.
+shared operating assumptions affect annual heating and cooling demand. The case
+study uses **four drawing-derived energy-station scenarios** in Taiyuan, China.
 
 **Python · EnergyPlus · Computational geometry · Parametric simulation · Sensitivity analysis**
 
-## Research question
+[Methods](docs/METHODS.md) · [Reproduce](docs/REPRODUCING.md) · [Data](data/README.md) · [Citation](CITATION.cff)
+
+## Research question and result
 
 How stable is the comparison between four building scenarios when thermal zoning,
 envelope properties and operating inputs change?
@@ -23,6 +24,13 @@ Right: tested conditions with at least one pairwise reversal relative to the
 baseline, using a 0.01 kWh/m²/year near-tie threshold. H = horizontal,
 V = vertical, HY = hybrid, NS = north–south.*
 
+- Baseline combined ideal thermal demand ranges from **63.25 to 74.81 kWh/m²/year**.
+- The 16 single-factor conditions preserve the heating and combined-demand order;
+  cooling has a pairwise reversal in **8 of 16** conditions.
+- The 24 compound conditions produce reversals in **1 heating, 20 cooling and
+  1 combined-demand** comparisons. Comparing only the baseline would miss these
+  changes.
+
 ## Computational workflow
 
 | Step | Implementation |
@@ -35,47 +43,42 @@ V = vertical, HY = hybrid, NS = north–south.*
 
 ## Quick start
 
-Python **3.11 or later**. Numerical reproduction requires only the standard library:
+Python **3.11 or later**. Numerical reproduction uses the standard library:
 
 ```sh
 python run_analysis.py --check-models
 python -m unittest discover -s tests -v
 ```
 
-This recalculates all 170 annual records from the included monthly data, verifies
-the model checksums, and writes tables and a summary to `outputs/analysis/`.
+This recomputes 170 annual records from the monthly inputs, checks them against
+archived values and verifies model hashes. Tables and `summary.json` are written
+to `outputs/analysis/`. [Figure generation, model building and simulation commands](docs/REPRODUCING.md).
 
-To regenerate the figures and baseline models:
+## Repository guide
 
-```sh
-python -m pip install -r requirements.txt
-python run_analysis.py --figures
-python build_models.py
-```
+| Location | Responsibility |
+| --- | --- |
+| [Root Python commands](docs/REPRODUCING.md) | Build models, run simulations, extract SQL results and analyse sensitivity |
+| [src/](src/) | Geometry, result extraction, comparisons and plotting |
+| [data/](data/README.md) | Case index, monthly loads and geometry inputs |
+| [configs/](configs/) | Common model and operating parameters |
+| [models/](models/) | 170 original, executed EnergyPlus IDFs |
+| [reference/](reference/README.md) | Annual comparison targets, geometry QA, source verification and baseline logs |
+| [assets/](assets/) · [docs/](docs/) | Research figures, methods and reproduction instructions |
+| [tests/](tests/) | Units, near-ties, factorial contrasts and archived-data regression checks |
+| [PROVENANCE.md](PROVENANCE.md) · [source_manifest.json](source_manifest.json) | Source history, identities, weather checksum and engine version |
 
-To rerun the simulations, install **EnergyPlus 26.1.0** and obtain the specified
-Taiyuan CSWD weather file. See [reproduction instructions](docs/REPRODUCING.md).
+Generated analyses, rebuilt models and new solver runs go in `outputs/`, ignored
+by Git. The original IDFs in `models/` remain reference inputs for rerunning.
 
-## Selected findings
+## Validation and scope
 
-- Baseline combined ideal thermal demand ranges from **63.25 to 74.81 kWh/m²/year**.
-- The 16 single-factor conditions preserve the heating and combined-demand order;
-  cooling has a pairwise reversal in **8 of 16** conditions.
-- The 24 compound conditions produce reversals in **1 heating, 20 cooling and
-  1 combined-demand** comparisons. Comparing only the baseline would miss these
-  changes.
-
-[Experiment design and results](docs/METHODS.md) · [Data dictionary](data/README.md)
-
-## Geometry
-
-![Four scenarios, four floor levels, and thermal-zone categories](assets/geometry.png)
-
-*Floor polygons at a common scale, with +Y pointing north. Blue denotes virtual
-conditioned space; grey denotes enclosed unconditioned space. Models use a 6 m
-floor height and scenario-specific conditioned areas.*
-
-## Scope and verification
+| Result or artifact | Input and implementation | Verification |
+| --- | --- | --- |
+| Annual demand for 170 runs | Monthly zone loads → [result calculations](src/results.py) | [Full-precision annual reference](reference/annual_results.csv) |
+| Pairwise reversals and factorial contrasts | Case definitions → [sensitivity calculations](src/sensitivity.py) | Analytical contrast tests and archived-data checks |
+| Four regenerated baselines | Floor polygons + [parameters](configs/model_parameters.json) → [builder](build_models.py) | Geometry checks and EnergyPlus-object comparison with archived IDFs |
+| Four baseline solver reruns | Original IDFs + specified weather → [batch runner](run_simulations.py) | [Recorded rerun verification](reference/validation/baseline_rerun_verification.json) |
 
 These are conditional geometry scenarios with common virtual-use assumptions.
 The outputs are **ideal thermal conditioning demand**, including sensible and
@@ -88,7 +91,10 @@ matched the archived values. The runs retain known psychrometric warnings, and
 a same-input annual solver-error bound has not been established.
 [Verification details and limitations](docs/VALIDATION.md).
 
-This repository documents ongoing research. Source history and code adaptations
-are recorded in [PROVENANCE.md](PROVENANCE.md).
+## Research record
 
-[Dependencies and reuse](LICENSE_NOTES.md) · [GitHub profile](https://github.com/leolinnnn)
+Ongoing research by **Zihao Lin**, using a 170-run simulation archive.
+[Source history and adaptations](PROVENANCE.md) · [Repository citation](CITATION.cff)
+· [Dependencies and reuse](LICENSE_NOTES.md).
+
+[Geometry plans and common modelling conditions](docs/METHODS.md#geometry-and-common-conditions).

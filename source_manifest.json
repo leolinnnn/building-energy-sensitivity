@@ -1,0 +1,28 @@
+{
+  "source_generator": {
+    "name": "build_exploratory_idfs.py",
+    "sha256": "60ec1833b1e8e6add146a3d53b3d0a0057ba083677591f1d356bacf707039172"
+  },
+  "source_parameters_sha256": "8c65796c35f6e20b3892cb4eea2d2a32672c7b69d850a7d1c027f39d1ef8e2ba",
+  "source_results_sha256": "d08e965e46c9348cf99b9307cef8926db8aeaf7fad643519ba1a9d1ea26e7e03",
+  "copied_geometry_files": {
+    "data/geometry/floor_categories_m.geojson": {
+      "source_relative_path": "conventional_geometry_v1/floor_categories_m.geojson",
+      "sha256": "db61f5eac536f1c8804447220afefe08470c6808155352537b3190e2de22130b"
+    },
+    "reference/geometry/floor_geometry_qa.csv": {
+      "source_relative_path": "conventional_geometry_v1/floor_geometry_qa.csv",
+      "sha256": "c330876a34c3e246006e48add8ff21874968a4eaca97918411152d119be6050d"
+    },
+    "data/geometry/gridded_footprints.geojson": {
+      "source_relative_path": "m17_figures_results_zh_CN_v1/data/F1_gridded_conditional_footprints.geojson",
+      "sha256": "5a84f8948f60db59b7b862de6ef400c8999ae97cfe9dec001977093b37831476"
+    }
+  },
+  "weather": {
+    "filename": "CHN_Shanxi.Taiyuan.537720_CSWD.epw",
+    "sha256": "f6b125ed8424f062ededec7f5c685b03c903b85f0a64521830b5519520488175",
+    "download_url": "https://energyplus-weather.s3.amazonaws.com/asia_wmo_region_2/CHN/CHN_Shanxi.Taiyuan.537720_CSWD/CHN_Shanxi.Taiyuan.537720_CSWD.zip"
+  },
+  "engine": "26.1.0-6f2e40d102"
+}

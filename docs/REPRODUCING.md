@@ -14,7 +14,7 @@ python -m unittest discover -s tests -v
 No EnergyPlus installation or third-party Python package is needed for this step.
 The monthly zone records in `data/monthly_zone_loads.csv` are summed and divided
 by the actual conditioned area of each model. Annual values are checked against
-`data/annual_results.csv`.
+`reference/annual_results.csv`.
 
 Output files in `outputs/analysis/`:
 

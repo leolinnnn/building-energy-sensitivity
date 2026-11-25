@@ -4,6 +4,11 @@
 
 ## Geometry and common conditions
 
+![Four scenarios, four floor levels, and thermal-zone categories](../assets/geometry.png)
+
+*Floor polygons at a common scale, with +Y pointing north. Blue denotes virtual
+conditioned space; grey denotes enclosed unconditioned space.*
+
 Four conditional scenarios are reconstructed from annotated architectural
 drawings: horizontal (H), vertical (V), hybrid (HY) and north–south (NS).
 Each includes B1 and F1–F3 with 6 m storey heights. +Y remains north; the NS name

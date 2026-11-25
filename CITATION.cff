@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Cite this repository when using its code or assets; see the README for the associated research record."
+type: software
+title: "Building energy sensitivity: model generation and analysis"
+authors:
+  - family-names: Lin
+    given-names: Zihao
+repository-code: "https://github.com/leolinnnn/building-energy-sensitivity"

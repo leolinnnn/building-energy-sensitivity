@@ -21,15 +21,16 @@ unverified historical energy figures are not used in this repository's results.
 | Repository content | Origin and treatment |
 | --- | --- |
 | `models/` | Byte-for-byte copies of the 170 executed IDFs listed in the research results index |
-| `data/geometry/` | Original conditional floor polygons, area reference and gridded plotting geometry |
+| `data/geometry/` | Original conditional floor polygons and gridded plotting geometry |
+| `reference/geometry/` | Original floor-area QA reference used to validate model construction |
 | `src/energy_model.py` | Geometry and EnergyPlus object-generation core from `build_exploratory_idfs.py`; local path setup and archive-specific CLI/gates replaced |
-| `data/model_parameters.json` | Original common parameter values; effective `FullExterior` setting recorded, local paths and obsolete workflow flags removed |
+| `configs/model_parameters.json` | Original common parameter values; effective `FullExterior` setting recorded, local paths and obsolete workflow flags removed |
 | `data/monthly_zone_loads.csv` | Newly extracted from the 170 source SQL databases, with original numerical precision |
-| `data/annual_results.csv` | Recomputed from those monthly values and checked against the source results index |
+| `reference/annual_results.csv` | Recomputed from those monthly values and checked against the source results index |
 | Portable CLI, analysis and plotting | Repository preparation code, implementing the documented source calculations and comparison rules |
 
 Original model/SQL hashes are stored in `data/cases.csv`. Original generator,
-parameter and results-index hashes are in `data/source_manifest.json`. The source
+parameter and results-index hashes are in `source_manifest.json`. The source
 generator's geometry and object-generation algorithms are retained. Changes to
 input paths and header comments mean regenerated model files are compared by
 their EnergyPlus objects, not by whole-file byte identity.
@@ -53,3 +54,15 @@ upstream record; this release supplies the geometry needed for model generation.
 - Kassis, T., Agarwal, V., He, Y., Patel, D. & Brueckner, A. M. (2026).
   [Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://doi.org/10.48550/arXiv.2609.00065).
   The Matplotlib skill informed the plotting workflow used during repository preparation.
+
+## Local organization review — 25 November 2026
+
+File responsibilities and README navigation were aligned across the research
+repositories. `source_manifest.json` is the common source-record entry; its
+project-specific schema is retained. Research inputs, archived numerical
+values, original figures and engine assets preserve their bytes.
+
+Model parameters moved to `configs/`; comparison targets, geometry QA and
+archived logs moved to `reference/`. Only repository paths changed in
+the Python implementation. The floor-area QA table is read as a validation
+target by the model builder.
